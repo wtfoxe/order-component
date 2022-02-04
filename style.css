@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/***** GLOBAL *****/
+	* {
+	  box-sizing: border-box;
+	  margin: 0;
+	  padding: 0;
+
+	  /*colors*/
+	  --ghost: #f5f7ff;
+	  --ice: #e0e8ff;
+	  --blue: #3829e0;
+	  --desatureted-blue: #7280a7;
+	  --dark-blue: #1f2f56;
+	  --shadow: #b4b9ce;
+
+	} 
+	html{
+		font-family: 'Red Hat Display', sans-serif;
+		font-size: 16px;
+		height: 100vh;
+	}
+
+/***** BODY *****/
+	body{
+		background-image: url("./images/pattern-background-desktop.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-color: var(--ice);
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+/***** MAIN *****/
+	.card{
+		background-color: white; 
+		box-shadow: 0 16px 18px -4px var(--shadow);
+		width: 450px;
+		height: 700px;
+		border-radius: 20px;
+	}
+	.image-hero{
+		height: 220px;
+		border-radius: 20px 20px 0 0;
+		background-image: url("./images/illustration-hero.svg");
+	}
+	.container{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		height: 480px;
+		width: 360px;
+		margin: auto;
+	}
+	.header{
+		height: 200px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.header h2{
+		margin: 24px auto 16px;
+		color: var(--dark-blue);
+		font-weight: 900;
+		font-size: 28px;
+	}
+	.header p{
+		color: var(--desatureted-blue);
+	}
+	.annual-plan{
+		background-color: var(--ghost);
+		border-radius: 12px;
+		font-size: 18px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100px;
+	}
+	.annual-plan img{
+		width: 48px;
+		height: 48px;
+		margin-left: 20px;
+	}
+	.annual-plan span{
+		font-weight: 900;
+		color: var(--dark-blue);
+	}
+	.annual-plan #plan{
+		color: var(--desatureted-blue);
+		width: 110px;
+		margin: auto 52px auto 10px;
+	}
+	.annual-plan #change{
+		color: var(--blue);
+		font-size: 16px;
+		font-weight: 700;
+		margin: auto 20px auto 36px;
+	}
+	.annual-plan #change:hover{
+		color: var(--desatureted-blue);
+		text-decoration: none;
+	}
+	.payment{
+		background-color: var(--blue);
+		border-radius: 10px;
+		box-shadow: 0 10px 30px 0 var(--shadow);
+		margin: 30px auto;
+    	width: 100%;
+    	height: 50px;
+	}
+	.payment p{
+		color: var(--ice);
+		font-weight: 900;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+    	height: 100%;
+	}
+	.payment:hover{
+		cursor: pointer;
+		opacity: 0.7;
+	}
+	.order{
+		color: var(--desatureted-blue);
+		font-weight: 700;
+	}
+	.order:hover{
+		color: var(--dark-blue);
+		cursor: pointer;
+	}
+
+/***** FOOTER *****/
+	footer{
+		position: absolute;
+		bottom: 0;
+		padding: 10px;
+		width: 100%
+	}
+	.attribution{ 
+		text-align: center; 
+	}
+	.attribution a{ 
+		color: var(--desatureted-blue); 
+		font-weight: 700;
+		text-decoration: none;
+	}
+	.attribution a:hover{
+		color: var(--blue);
+	}

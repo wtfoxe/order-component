@@ -1,0 +1,46 @@
+@media(max-width: 426px){
+	.card{
+	    width: 390px;
+    	height: 680px;
+	}
+}
+
+@media(max-width: 376px){
+	.card{
+		width: 350px;
+    	height: 670px;
+	}
+	.container{
+		width: 100%;
+	}
+	.annual-plan{
+		width: 330px;
+		margin: 0 auto;
+	}
+	.annual-plan #plan{
+		font-size: 16px;
+		margin-right: 40px;
+	}
+	.payment{
+		width: 330px;
+	}
+}
+
+@media(max-width: 320px){
+	.card{
+		width: 300px;
+	}
+	.annual-plan{
+		width: 96%;
+	}
+	.annual-plan #plan{
+		font-size: 15px;
+	}
+	.annual-plan #change{
+		margin-left: 0;
+		font-size: 14px;
+	}
+	.payment{
+		width: 96%;
+	}
+}
